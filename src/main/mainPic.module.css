@@ -1,0 +1,10 @@
+.mainText{
+border: 1px solid red;
+}
+
+.mainText span{
+    color: #f3f6f2;
+}
+.mainText h2{
+    color: gold;
+}
