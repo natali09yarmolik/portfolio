@@ -1,0 +1,50 @@
+@import "src/common/mixin";
+@import "src/common/variables";
+
+@media (max-width: 992px) {
+    .contactsBlockForm {
+        max-width: 230px;
+    }
+    .contactsBlock input {
+        height: 20px;
+    }
+    .contactsBlock input {
+        height: 40px;
+    }
+}
+
+.contacts {
+    height: calc(100vh - 70px);
+    margin: 20px auto;
+    background-color: $bgColorCV;
+    @include flex(flex, row, center, center);
+
+    .contactsBlock {
+        height: 100%;
+        padding: 20px 0;
+        @include flex(flex, column, flex-start, center);
+
+        .contactsBlockForm {
+            height: 70%;
+            width: 300px;
+            margin-top: 30px;
+            background-color: $formColor;
+            border-radius: 10px;
+            box-shadow: 0 5px 0px 10px $textColorButton;
+            @include flex(flex, column, space-around, center);
+            gap: 20px;
+
+            .contactsBlockInput {
+                @include contactsBlock(80%, 40px, none, 5px);
+            }
+
+            .contactsBlockTextarea {
+                @include contactsBlock(80%, 80px, none, 5px);
+            }
+        }
+    }
+}
+
+
+
+

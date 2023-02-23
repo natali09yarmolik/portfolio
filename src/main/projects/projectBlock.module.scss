@@ -1,0 +1,62 @@
+@import "src/common/mixin";
+@import "src/common/variables";
+
+@media (max-width:992px){
+    .projectBlock{
+        max-width: 300px;
+    }
+}
+
+.projectBlock {
+    max-width: 350px;
+    min-height: 400px;
+    margin: 0 auto;
+    padding-top: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 0px 10px $textColorButton;
+    @include flex(flex, column, flex-start, center);
+    gap: 15px;
+    flex-wrap: wrap;
+
+    .projectBlockIMG {
+        width: 85%;
+        height: 50%;
+        @include flex(flex, row, center, center);
+
+        .projectIMG {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+
+        .projectBlockButton {
+            position: absolute;
+            width: 150px;
+            height: 40px;
+            background-color: $bgColorButtonAndHighlightText;
+            border: 2px solid transparent;
+            color: $textColorButton;
+            border-radius: 50px;
+            @include flex(flex, row, center, center);
+            z-index: 10;
+
+            .projectLink {
+                color: $textColorButton;
+            }
+        }
+
+    }
+
+    .projectBlockText {
+        width: 90%;
+        height: 30%;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+

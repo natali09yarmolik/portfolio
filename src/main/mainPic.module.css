@@ -1,10 +1,19 @@
-.mainText{
-border: 1px solid red;
+@media (max-width: 992px) {
+    .mainPic {
+        max-width: 250px;
+        max-height: 200px;
+        margin: 0 auto;
+
+    }
+
 }
 
-.mainText span{
-    color: #f3f6f2;
+.mainPic{
+    width: 350px;
+    height: 300px;
+    background-image:url("../image/Photo.jpg");
+    background-size: cover;
+    border-top-left-radius: 100% 30px;
+    border-bottom-right-radius: 100% 30px;
 }
-.mainText h2{
-    color: gold;
-}
+

@@ -1,12 +1,9 @@
 import React from 'react'
-import s from './main.module.css';
+import s from './mainPic.module.css';
 
-
-export const Main=()=> {
+export const MainPic=()=> {
     return (
-        <div className={s.main}>
-
-        </div>
+        <div className={s.mainPic}></div>
     );
 }
 

@@ -1,0 +1,21 @@
+@import "src/common/mixin";
+
+.skills{
+    min-height: 100vh;
+    @include flex(flex, row, center, center);
+    flex-wrap: wrap;
+
+    .skillsBlock {
+        margin: 20px 0;
+        flex-direction: column;
+
+        .skill {
+            width: 100%;
+            margin-top: 15px;
+            @include flex(flex, row, space-between, center);
+            flex-wrap: wrap;
+            gap: 3rem;
+        }
+    }
+}
+

@@ -1,12 +1,21 @@
 import React from 'react'
-import s from './skillsBlock.module.css'
+import s from './projectBlock.module.scss'
 
-export const SkillsBlock=(props)=> {
+export const ProjectBlock=(props)=> {
     return (
-        <div className={s.skillBlock}>
-            <img src={props.img} alt={props.alt}/>
-            <span>{props.title}</span>
-            <div className={s.skillBlockText}>
+        <div className={s.projectBlock}>
+            <div className={s.projectBlockIMG}>
+                <img src={props.img}
+                    alt={props.alt}
+                     className={s.projectIMG}/>
+                <div className={s.projectBlockButton}>
+                    <a href={props.linkProject}
+                       className={s.projectLink} >SHOW</a>
+                </div>
+            </div>
+
+            <h3>{props.title}</h3>
+            <div className={s.projectBlockText}>
                 <p>{props.description}</p>
             </div>
         </div>);

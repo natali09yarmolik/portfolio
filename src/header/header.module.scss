@@ -1,0 +1,18 @@
+@import "./src/common/variables.scss";
+@import "./src/common/mixin";
+
+.header {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    margin: 0 auto;
+    background-color: $bgColorCV;
+    @include flex(flex, row, center, center);
+    z-index: 100;
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        @include flex(flex, row, flex-end, center);
+    }
+}
+

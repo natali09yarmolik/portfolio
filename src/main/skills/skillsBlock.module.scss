@@ -1,0 +1,30 @@
+@import "src/common/mixin";
+@import "src/common/variables";
+
+.skillBlock {
+    flex: 1 1 calc((100% / 3) - 2rem);
+    min-height: 300px;
+    padding-top: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 0px 10px $bgColorCV;
+    @include flex(flex, column, flex-start, center);
+    gap: 15px;
+    flex-wrap: wrap;
+
+    .skillBlockImg {
+        width: 120px;
+        height: 120px;
+        border-radius: 10%;
+    }
+
+    .skillBlockText {
+        width: 90%;
+        min-height: 40%;
+        text-align: center;
+    }
+}
+
+
+
+
+

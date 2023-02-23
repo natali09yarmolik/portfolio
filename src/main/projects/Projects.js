@@ -1,34 +1,35 @@
 import React from 'react'
-import s from './progects.module.css';
+import s from './projects.module.scss';
+import counter from '../../image/counter.jpg'
+import travel from '../../image/Travel.jpg'
+import style from '../../container.module.scss'
+import {ProjectBlock} from "./ProjectBlock";
 
-import style from '../../container.module.css'
-
-export const Progects=()=> {
+export const Projects=()=> {
     return (
-        <div className={s.progects}>
-            <div className={style.container}>
-                <div className={s.skillsBlock}>
-                    <h2>MY SKILLS</h2>
-                    <div className={s.skill}>
-                        <SkillsBlock
-                            img={html}
-                            alt={'html'}
-                            title={'HTML'}
-                            description={'Basic knowledge of HTML'}
-                        />
-                        <SkillsBlock
-                            img={css}
-                            alt={'css'}
-                            title={'CSS3'}
-                            description={'Basic knowledge of CSS3'}
-                        />
-                        <SkillsBlock
-                            img={reactPic}
-                            alt={'reactPic'}
-                            title={'REACT'}
-                            description={'Application development using React'}
-                        />
-                    </div>
+        <div className={s.projects}>
+            <div className={`${style.container} ${s.projectsBlock}`}>
+                <h2>MY PROJECTS</h2>
+                <div className={s.project}>
+                    <ProjectBlock
+                        linkProject={'https://github.com/natali09yarmolik/counter_tuesday'}
+                        img={counter}
+                        alt={'counter'}
+                        title={'Counter'}
+                        description={'The user enters the minimum and ' +
+                            'maximum values, presses the "set" button and increases ' +
+                            'the value of the number by pressing the "inc" button to the maximum.'}
+                    />
+                    <ProjectBlock
+                        linkProject={'https://github.com/natali09yarmolik/traval'}
+                        img={travel}
+                        alt={'travel'}
+                        title={'Travel'}
+                        description={'Travel Website'}
+                    />
+                </div>
+                <div className={'project-btn-block'}>
+
                 </div>
             </div>
         </div>

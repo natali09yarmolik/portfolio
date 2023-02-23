@@ -1,0 +1,49 @@
+@import "./src/common/variables.scss";
+@import "./src/common/mixin";
+
+@media (max-width: 992px) {
+   .footerIcons {
+        max-width: 200px;
+        min-height: 200px;
+        flex-direction: column;
+        justify-content: center;
+}
+    .footerBlock {
+        justify-content: center;
+    }
+}
+
+.footer {
+  min-height: 8vh;
+  margin-top: -20px;
+  @include flex(flex, row, center, center);
+  flex-wrap: wrap;
+
+  .footerBlock {
+    min-height: 100%;
+    flex-direction: column;
+
+    .footerIcons {
+      max-width: 900px;
+      min-height: 50px;
+      @include flex(flex, row, space-between, center);
+      flex-wrap: wrap;
+
+      .footerIconsIMG {
+        width: 25px;
+        height: 25px;
+        margin-right: 5px;
+        margin-left: 10px;
+      }
+    }
+
+    .footerBlockSpan {
+      font-size: 16px;
+      color: $bgColorButtonAndHighlightText;
+    }
+  }
+}
+
+
+
+

@@ -1,17 +1,25 @@
 import React from 'react'
-import s from './distant.module.css'
-import style from '../../container.module.css'
+import s from './contacts.module.scss'
+import style from '../../container.module.scss'
 
-export const Distant=()=> {
+export const Contacts=()=> {
     return (
-        <div className={s.distant}>
-           <div className={style.container}>
-               <div className={s.distantBlock}>
-                   <span>Consider all the variants of remote work</span>
-                   <button>Hire me</button>
-               </div>
+        <div className={s.contacts}>
+            <div className={`${style.container} ${s.contactsBlock}`}>
+                <h2>Contacts</h2>
+                <form className={s.contactsBlockForm}>
+                    <input type={"text"}
+                           placeholder={'Enter your name'}
+                           className={s.contactsBlockInput}/>
+                    <input type={"text"}
+                           placeholder={'Enter your phone'}
+                           className={s.contactsBlockInput}/>
+                    <textarea placeholder={'Enter your message'}
+                              className={s.contactsBlockTextarea}></textarea>
+                    <button type={'submit'}>Send</button>
+                </form>
 
-           </div>
+            </div>
         </div>);
 }
 

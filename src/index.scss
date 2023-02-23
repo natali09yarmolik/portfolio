@@ -1,0 +1,79 @@
+*{ padding: 0; margin: 0; border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;
+  box-sizing: border-box;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+img{vertical-align: top;}
+ul li{list-style: none;
+       }
+h1,h2,h3,h4,h5,h6{font-size: inherit;
+
+  padding: 0; margin: 0; border: 0;}
+body {
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+@import "./src/common/variables";
+
+@media (max-width:992px){
+
+
+  p{
+    text-indent: 10px;
+    text-align: justify;
+  }
+}
+
+
+h1{
+  color: $textColorMain;
+  font-size: 75px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+h2 {
+  color: $textColorMain;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.5;
+  text-transform: capitalize;
+}
+h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 31px;
+  color: $textColorMain;
+  margin: 20px 0 15px;
+}
+p, li{
+  display: inline-block;
+  color: $textColorSecondary;
+  font-size: 16px;
+}
+button{
+  padding: 10px 30px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  text-decoration: none;
+  border-radius: 50px;
+  background-color: $bgColorButtonAndHighlightText;
+  border: 2px solid transparent;
+  color: $textColorButton;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 20px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 60px;
+}
