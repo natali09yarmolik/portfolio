@@ -4,7 +4,7 @@ import style from '../../container.module.scss'
 
 export const Contacts=()=> {
     return (
-        <div className={s.contacts}>
+        <div id={'id-contacts'} className={s.contacts}>
             <div className={`${style.container} ${s.contactsBlock}`}>
                 <h2>Contacts</h2>
                 <form className={s.contactsBlockForm}>

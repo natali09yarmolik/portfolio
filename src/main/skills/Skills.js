@@ -11,22 +11,10 @@ import style from '../../container.module.scss'
 
 export const Skills=()=> {
     return (
-        <div className={s.skills}>
+        <div id={'id-skills'} className={s.skills}>
             <div className={`${style.container} ${s.skillsBlock}`}>
                 <h2>MY SKILLS</h2>
                 <div className={s.skill}>
-                    <SkillsBlock
-                        img={html}
-                        alt={'html'}
-                        title={'HTML'}
-                        description={'Basic knowledge of HTML'}
-                    />
-                    <SkillsBlock
-                        img={css}
-                        alt={'css'}
-                        title={'CSS3'}
-                        description={'Basic knowledge of CSS3'}
-                    />
                     <SkillsBlock
                         img={reactPic}
                         alt={'reactPic'}
@@ -44,6 +32,18 @@ export const Skills=()=> {
                         alt={'typePic'}
                         title={'Type Script'}
                         description={'Application development using Type Script'}
+                    />
+                    <SkillsBlock
+                        img={html}
+                        alt={'html'}
+                        title={'HTML'}
+                        description={'Basic knowledge of HTML'}
+                    />
+                    <SkillsBlock
+                        img={css}
+                        alt={'css'}
+                        title={'CSS3'}
+                        description={'Basic knowledge of CSS3'}
                     />
                     <SkillsBlock
                         img={figma}

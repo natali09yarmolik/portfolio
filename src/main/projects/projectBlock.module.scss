@@ -1,22 +1,28 @@
 @import "src/common/mixin";
 @import "src/common/variables";
 
-@media (max-width:992px){
-    .projectBlock{
-        max-width: 300px;
+@media (max-width: 992px) {
+    .projectBlock {
+        min-height: 400px;
+        max-width: 95%;
+    }
+    .projectBlockText {
+        max-width: 95%;
+        min-height: 10%;
     }
 }
 
 .projectBlock {
-    max-width: 350px;
-    min-height: 400px;
+    width: 450px;
+    height: 450px;
     margin: 0 auto;
-    padding-top: 15px;
+    padding: 10px;
     border-radius: 10px;
-    box-shadow: 0 5px 0px 10px $textColorButton;
+    box-shadow: 0 5px 0 10px $textColorButton;
     @include flex(flex, column, flex-start, center);
     gap: 15px;
     flex-wrap: wrap;
+    transition: 0.5s;
 
     .projectBlockIMG {
         width: 85%;
@@ -41,7 +47,27 @@
             z-index: 10;
 
             .projectLink {
+                width: 150px;
+                height: 40px;
+                text-align: center;
+                padding-top: 5px;
                 color: $textColorButton;
+            }
+        }
+
+        .projectBlockButton:hover {
+            position: absolute;
+            width: 150px;
+            height: 40px;
+            background-color: $formColor;
+            border: 2px solid $bgColorButtonAndHighlightText;
+            color: $bgColorButtonAndHighlightText;
+            border-radius: 50px;
+            @include flex(flex, row, center, center);
+            z-index: 10;
+
+            .projectLink:hover {
+                color: $bgColorButtonAndHighlightText;
             }
         }
 
@@ -49,9 +75,13 @@
 
     .projectBlockText {
         width: 90%;
-        height: 30%;
+        height: 10%;
         text-align: center;
     }
+}
+
+.projectBlock:hover {
+    transform: scale(1.05, 1.05)
 }
 
 

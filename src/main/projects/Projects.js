@@ -2,15 +2,25 @@ import React from 'react'
 import s from './projects.module.scss';
 import counter from '../../image/counter.jpg'
 import travel from '../../image/Travel.jpg'
+import cost from '../../image/cost.png'
 import style from '../../container.module.scss'
 import {ProjectBlock} from "./ProjectBlock";
 
 export const Projects=()=> {
     return (
-        <div className={s.projects}>
+        <div id={'id-projects'} className={s.projects}>
             <div className={`${style.container} ${s.projectsBlock}`}>
                 <h2>MY PROJECTS</h2>
                 <div className={s.project}>
+                    <ProjectBlock
+                        linkProject={'https://natali09yarmolik.github.io/test-Project-frame-calculation/'}
+                        img={cost}
+                        alt={'cost'}
+                        title={'Calculation of the cost of the frame'}
+                        description={'The user enters the parameters of the' +
+                                     'frame and the program calculates the amount' +
+                                     'of necessary material and its cost'}
+                    />
                     <ProjectBlock
                         linkProject={'https://github.com/natali09yarmolik/counter_tuesday'}
                         img={counter}

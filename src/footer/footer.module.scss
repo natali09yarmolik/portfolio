@@ -2,15 +2,18 @@
 @import "./src/common/mixin";
 
 @media (max-width: 992px) {
-   .footerIcons {
-        max-width: 200px;
-        min-height: 200px;
-        flex-direction: column;
-        justify-content: center;
-}
-    .footerBlock {
-        justify-content: center;
-    }
+
+  .footerBlock {
+    justify-content: center;
+    align-items: center;
+
+  }
+  .footerIcons {
+    width: 200px;
+    min-height: 200px;
+    @include flex(flex, column, center, center);
+  }
+
 }
 
 .footer {

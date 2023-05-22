@@ -1,0 +1,28 @@
+@media (max-width: 992px) {
+    .mainPicBlock {
+        max-width: 300px;
+        max-height: 250px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -150px;
+    }
+
+    .mainPic {
+        max-width: 300px;
+        max-height: 250px;
+    }
+}
+
+.mainPicBlock {
+    width: 350px;
+    height: 300px;
+}
+
+.mainPic {
+    width: 100%;
+    height: 100%;
+    background-image: url("../../../image/Photo.jpg");
+    background-size: cover;
+    border-top-left-radius: 100% 30px;
+    border-bottom-right-radius: 100% 30px;
+}

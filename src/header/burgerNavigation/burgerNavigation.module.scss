@@ -1,0 +1,106 @@
+@import "../../common/variables";
+@import "../../common/mixin";
+
+.burgerNavigation{
+    position: relative;
+    width: 100%;
+    background-color: $bgColorCV;
+
+    .burgerNavigationButton{
+        position: absolute;
+        right: 0;
+        top: -16px;
+        .burgerNavigationButtonClose{
+            position: relative;
+            width: 40px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            overflow: hidden;
+            span{
+                position: absolute;
+                width: 40px;
+                height: 3px;
+                background: $textColorMain;
+                border-radius: 10px;
+                transition: 0.5s;
+                right: 0;
+                &:nth-child(1){
+                    width: 30px;
+                    transform: translateY(0) rotate(45deg);
+                    transition-delay: 0.125s;
+                }
+                &:nth-child(2) {
+                    width: 30px;
+                    transform: translateY(0) rotate(315deg);
+                    transition-delay: 0.25s;
+                }
+                &:nth-child(3) {
+                    transform: translateX(60px);
+                }
+            }
+        }
+        .burgerNavigationButtonOpen{
+            position: relative;
+            width: 40px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            overflow: hidden;
+            span{
+                position: absolute;
+                width: 40px;
+                height: 3px;
+                background: $textColorMain;
+                border-radius: 10px;
+                transition: 0.5s;
+                right: 0;
+                &:nth-child(1){
+                    width: 25px;
+                    transform: translateY(-10px);
+                }
+                &:nth-child(2) {
+                    width: 15px;
+                    transform: translateY(10px);
+                }
+            }
+        }
+    }
+    .burgerNavigationItems{
+        position: absolute;
+        top: 30px;
+        right: 0;
+        width: 130px;
+        height: 0;
+        background-color: #fdf6f6;
+        border-radius: 10px;
+        @include flex(flex, column, space-between, flex-end);
+        transform:translate(150px, 0);
+        transition: 0.7s;
+        a{
+            font-weight: 500;
+            font-size: 22px;
+            color: $textColorMain;
+            cursor: pointer;
+            display: block;
+            transition: all 0.5s ease;
+        }
+        .active {
+            color: $bgColorButtonAndHighlightText;
+        }
+    }
+
+    .show{
+        transform:translate(0, 10px);
+        height: 140px;
+    }
+    @media (min-width: 400px) {
+        display: none;
+    }
+}
+
+

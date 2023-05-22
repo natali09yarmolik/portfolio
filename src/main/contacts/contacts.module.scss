@@ -14,32 +14,44 @@
 }
 
 .contacts {
-    height: calc(100vh - 70px);
+    height: calc(100vh - 69px);
     margin: 20px auto;
     background-color: $bgColorCV;
     @include flex(flex, row, center, center);
-
     .contactsBlock {
         height: 100%;
         padding: 20px 0;
         @include flex(flex, column, flex-start, center);
-
         .contactsBlockForm {
             height: 70%;
-            width: 300px;
+            max-width: 300px;
+            width: 100%;
             margin-top: 30px;
             background-color: $formColor;
             border-radius: 10px;
-            box-shadow: 0 5px 0px 10px $textColorButton;
+            box-shadow: 0 5px 0 10px $textColorButton;
             @include flex(flex, column, space-around, center);
             gap: 20px;
-
             .contactsBlockInput {
                 @include contactsBlock(80%, 40px, none, 5px);
+                padding: 0 20px;
             }
-
+            .contactsBlockInput:focus{
+                @include contactsBlock(83%, 45px, none, 5px);
+                padding: 0 20px;
+                outline: none;
+                border: 2px solid #fcd7d6;
+                box-shadow: 1px 1px 2px 0 #fcd7d6;
+            }
             .contactsBlockTextarea {
                 @include contactsBlock(80%, 80px, none, 5px);
+                padding: 10px 20px;
+            }
+            .contactsBlockTextarea:focus{
+                @include contactsBlock(83%, 85px, none, 5px);
+                outline: none;
+                border: 2px solid #fcd7d6;
+                box-shadow: 1px 1px 2px 0 #fcd7d6;
             }
         }
     }

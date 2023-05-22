@@ -9,8 +9,9 @@
     background-color: $bgColorCV;
     @include flex(flex, row, center, center);
     z-index: 100;
-    .container {
-        width: 80%;
+
+    .headerBlock {
+        width: 85%;
         margin: 0 auto;
         @include flex(flex, row, flex-end, center);
     }

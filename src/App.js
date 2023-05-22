@@ -1,14 +1,14 @@
 import React from 'react'
 import './App.scss';
-import Header from "./header/Header";
-import {Main} from "./main/Main";
 import {Skills} from "./main/skills/Skills";
 import {Projects} from "./main/projects/Projects";
 import {Distant} from "./main/distant/Distant";
 import {Contacts} from "./main/contacts/Contacts";
 import {Footer} from "./footer/Footer";
+import {Main} from "./main/mainBlock/Main";
+import {Header} from "./header/Header";
 
-function App() {
+export  const App = () => {
   return (
     <div className="App">
             <Header/>
@@ -22,4 +22,4 @@ function App() {
   );
 }
 
-export default App;
+
