@@ -1,8 +1,9 @@
 import React from 'react'
 import s from './projects.module.scss';
-import counter from '../../image/counter.jpg'
+import todo from '../../image/todo.png'
 import travel from '../../image/Travel.jpg'
 import cost from '../../image/cost.png'
+import cards from '../../image/cards.png'
 import style from '../../container.module.scss'
 import {ProjectBlock} from "./ProjectBlock";
 
@@ -23,12 +24,11 @@ export const Projects=()=> {
                     />
                     <ProjectBlock
                         linkProject={'https://github.com/natali09yarmolik/counter_tuesday'}
-                        img={counter}
-                        alt={'counter'}
-                        title={'Counter'}
-                        description={'The user enters the minimum and ' +
-                            'maximum values, presses the "set" button and increases ' +
-                            'the value of the number by pressing the "inc" button to the maximum.'}
+                        img={todo}
+                        alt={'todo'}
+                        title={'Task execution notepad'}
+                        description={'The user makes a list of tasks,' +
+                            'that can be put in the completed state.'}
                     />
                     <ProjectBlock
                         linkProject={'https://github.com/natali09yarmolik/traval'}
@@ -36,6 +36,13 @@ export const Projects=()=> {
                         alt={'travel'}
                         title={'Travel'}
                         description={'Travel Website'}
+                    />
+                    <ProjectBlock
+                        linkProject={'https://natali09yarmolik.github.io/cards2/'}
+                        img={cards}
+                        alt={'cards'}
+                        title={'Cards'}
+                        description={'Application for creating training cards'}
                     />
                 </div>
                 <div className={'project-btn-block'}>

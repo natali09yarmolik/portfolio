@@ -17,7 +17,7 @@ const defaultOptions = {
 export const MainPic=()=> {
     return (
         <div className={s.mainPicBlock}>
-            <Tilt options={defaultOptions} style={{ height: 300, width: 350 }}>
+            <Tilt options={defaultOptions} style={{ height: '100%', width: '100%' }}>
                 <div className={s.mainPic}></div>
             </Tilt>
         </div>
