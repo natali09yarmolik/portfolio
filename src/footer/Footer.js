@@ -13,8 +13,10 @@ export const Footer=()=> {
             <div className={`${style.container} ${s.footerBlock}`}>
                 <Fade top cascade>
                 <ul className={s.footerIcons}>
-                    <li><img src={mail} alt={"mail"} className={s.footerIconsIMG}/>n-bozh@mail.ru</li>
-                    <li><img src={telegram} alt={"telegram"} className={s.footerIconsIMG}/>Наталья Ярмолик</li>
+                    <li><a href={'https://e.mail.ru/compose/?to=natalij09yarmolik%40gmail.com'}><img src={mail} alt={"mail"} className={s.footerIconsIMG}/>
+                        n-bozh@mail.ru</a></li>
+                    <li><a href={'https://t.me/natali_yarmolik'}><img src={telegram} alt={"telegram"} className={s.footerIconsIMG}/>
+                        Наталья Ярмолик</a> </li>
                     <li><img src={phone} alt={"telephone"} className={s.footerIconsIMG}/>+375 44 784 48 74</li>
                     <li><a href={'https://github.com/natali09yarmolik'}><img src={gitHub} alt={"gitHub"} className={s.footerIconsIMG}/>natali09yarmolik</a></li>
                 </ul>
