@@ -1,7 +1,7 @@
 import React from 'react'
 import s from './projects.module.scss';
 import todo from '../../image/todo.png'
-import travel from '../../image/Travel.jpg'
+import sweet from '../../image/Sweet-shop.png'
 import cost from '../../image/cost.png'
 import cards from '../../image/cards.png'
 import style from '../../container.module.scss'
@@ -31,11 +31,11 @@ export const Projects=()=> {
                             'that can be put in the completed state.'}
                     />
                     <ProjectBlock
-                        linkProject={'https://github.com/natali09yarmolik/traval'}
-                        img={travel}
-                        alt={'travel'}
-                        title={'Travel'}
-                        description={'Travel Website'}
+                        linkProject={'https://natali09yarmolik.github.io/sweet-shop/'}
+                        img={sweet}
+                        alt={'sweet'}
+                        title={'Sweet-shop'}
+                        description={'Application for ordering cakes'}
                     />
                     <ProjectBlock
                         linkProject={'https://natali09yarmolik.github.io/cards2/'}
